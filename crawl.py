@@ -129,7 +129,7 @@ class Crawler:
 
     async def crawl(self, url: str):
         # rate limiting
-        await asyncio.sleep(1.1)
+        await asyncio.sleep(0.1)
 
         # retrieve the page at the given URL
         response = await self.client.get(url, follow_redirects=True)
